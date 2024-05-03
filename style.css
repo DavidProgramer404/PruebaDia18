@@ -1,0 +1,50 @@
+/* Estilos CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-color: rgba(33, 48, 185, 0.536);
+
+}
+h1{
+    text-align: center;
+}
+
+.container {
+    list-style-type: none;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    display: flex; /* Usar flexbox */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan a la siguiente línea */
+    justify-content: space-around; /* Distribuir uniformemente los elementos en el contenedor */
+}
+
+.card {
+    width: calc(25% - 20px); /* Ancho de cada tarjeta (25% del contenedor menos el margen) */
+    margin: 20px; /* Margen entre las tarjetas */
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Incluir el padding y border en el ancho total */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.card h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+

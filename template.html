@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aves de Chile</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="DavidValdes">
+</head>
+
+<body>
+    <h1>Aves de Chile</h1>
+    <ul class="container">
+        {% for bird in birds %}
+        <li class="card">
+            <h2>{{ bird.name.spanish }}</h2>
+            <p>Nombre en Inglés: {{ bird.name.english }}</p>
+            <p>Nombre español: {{ bird.name.spanish }}</p>
+            <img src="{{ bird.images.main }}" alt="{{ bird.name.spanish }}">
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
